@@ -15,5 +15,4 @@
         },
     };
     console.log({ flash, superman });
-    // superman.getName()
 })();
