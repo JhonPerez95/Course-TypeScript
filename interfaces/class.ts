@@ -23,5 +23,5 @@
 
   const newMutant = new Xmen('Jhon', 'Flash', 26)
 
-  console.log(newMutant.mutantPower(2))
+  // console.log(newMutant.mutantPower(2))
 })()

@@ -1,4 +1,43 @@
 "use strict";
+const conducirBatimovil = (auto) => {
+    auto.encender = true;
+    auto.velocidadMaxima = 100;
+    auto.acelear();
+};
+const batimovil = {
+    encender: false,
+    velocidadMaxima: 0,
+    acelear() {
+        console.log('...... gogogo!!!');
+    },
+};
+const guason = {
+    reir: true,
+    comer: true,
+    llorar: false,
+};
+const reir = (guason) => {
+    if (guason.reir) {
+        console.log('JAJAJAJA');
+    }
+};
+const ciudadGotica = (ciudadanos) => {
+    return ciudadanos.length;
+};
+class Persona {
+    constructor(nombre, edad, sexo, estadoCivil) {
+        this.nombre = nombre;
+        this.edad = edad;
+        this.sexo = sexo;
+        this.estadoCivil = estadoCivil;
+    }
+    imprimirBio() {
+        console.log(` ${this.nombre} tiene ${this.edad} años, es ${this.sexo}`);
+    }
+}
+const newPersona = new Persona('Jhon', 26, 'M', true);
+console.log(newPersona);
+newPersona.imprimirBio();
 ;
 (() => {
     let flash = {
@@ -28,7 +67,6 @@
         }
     }
     const newMutant = new Xmen('Jhon', 'Flash', 26);
-    console.log(newMutant.mutantPower(2));
 })();
 ;
 (() => {
@@ -55,6 +93,13 @@
         getFullAddress() {
             return this.address.city;
         },
+    };
+})();
+;
+(() => {
+    let addNumberFunction;
+    addNumberFunction = (a, b) => {
+        return a + b;
     };
 })();
 //# sourceMappingURL=main.js.map
