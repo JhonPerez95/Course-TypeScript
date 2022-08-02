@@ -17,6 +17,21 @@
 })();
 ;
 (() => {
+    class Xmen {
+        constructor(name, realName, age) {
+            this.name = name;
+            this.realName = realName;
+            this.age = age;
+        }
+        mutantPower(id) {
+            return `${this.name} ${id}`;
+        }
+    }
+    const newMutant = new Xmen('Jhon', 'Flash', 26);
+    console.log(newMutant.mutantPower(2));
+})();
+;
+(() => {
     const client = {
         name: 'Jhon',
         email: 'jhon@example.com',
@@ -41,7 +56,5 @@
             return this.address.city;
         },
     };
-    console.log({ client, client2 });
-    console.log(client.getFullAddress());
 })();
 //# sourceMappingURL=main.js.map

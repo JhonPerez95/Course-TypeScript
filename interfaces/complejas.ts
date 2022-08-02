@@ -39,6 +39,6 @@
     },
   }
 
-  console.log({ client, client2 })
-  console.log(client.getFullAddress())
+  // console.log({ client, client2 })
+  // console.log(client.getFullAddress())
 })()
